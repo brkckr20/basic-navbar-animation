@@ -1,3 +1,3 @@
 # Basic Navbar Menu Hover Effects
 
-![ScrenShot](./photo.png);
+![ScrenShot](./photo.png)
