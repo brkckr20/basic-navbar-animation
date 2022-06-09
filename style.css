@@ -33,6 +33,7 @@ body {
     padding: 5px;
 }
 
+/* yazının alt kısmındaki sarı çizginin oluşturulması */
 .menu a::before {
     content: "";
     width: 100%;
@@ -46,26 +47,30 @@ body {
     transform-origin: left;
 }
 
+/* hover olduğunda çizginin X ekseninde büyümesi */
 .menu a:hover::before {
     transform: scaleX(1);
 }
 
+/* animasyonun sağdan sola olması */
 .menu.to-left a::before {
     transform-origin: right;
 }
 
+/* animasyonun merkezden kenarlara doğru olmasu */
 .menu.center a::before {
     transform-origin: center;
 }
 
+
 .menu.custom a::before {
-    transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease-in-out;
-
+    
 }
 
 .menu.custom a:hover:before {
+    transform: scaleX(0);
     transform-origin: left;
     transform: scaleX(1);
     transition-timing-function: ease-in-out;
